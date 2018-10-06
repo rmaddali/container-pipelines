@@ -1,4 +1,4 @@
-APPLICATION_NAME=spring-rest
-NAMESPACE=basic-spring-boot-build
-SOURCE_REPOSITORY_URL=https://github.com/redhat-cop/container-pipelines.git
+APPLICATION_NAME=springboot-noun-service
+NAMESPACE=pipelines
+SOURCE_REPOSITORY_URL=https://github.com/rmaddali/springboot-noun-service.git
 SOURCE_REPOSITORY_REF=master
