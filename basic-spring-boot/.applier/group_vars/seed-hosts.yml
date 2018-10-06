@@ -12,9 +12,6 @@ openshift_cluster_content:
   - name: "deply stage environment"
     template: "{{ inventory_dir }}/../.openshift/templates/deployment.yml"
     params: "{{ inventory_dir }}/../.openshift/params/deployment-stage"
-  - name: "deply prod environment"
-    template: "{{ inventory_dir }}/../.openshift/templates/deployment.yml"
-    params: "{{ inventory_dir }}/../.openshift/params/deployment-prod"
 - object: builds
   content:
   - name: "deploy build pipeline to dev"
