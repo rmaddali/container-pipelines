@@ -4,24 +4,19 @@ items:
 - kind: ProjectRequest
   apiVersion: v1
   metadata:
-    name: basic-spring-boot-build
+    name: pipelines-user1
     creationTimestam: null
-  displayName: Spring Rest App - Build
+  displayName: CI CD env
 - kind: ProjectRequest
   apiVersion: v1
   metadata:
-    name: basic-spring-boot-dev
+    name: devenv-user1
     creationTimestam: null
-  displayName: Spring Rest App - Dev
+  displayName: Dev env
 - kind: ProjectRequest
   apiVersion: v1
   metadata:
-    name: basic-spring-boot-stage
+    name: stageenv-user1
     creationTimestam: null
-  displayName: Spring Rest App - Stage
-- kind: ProjectRequest
-  apiVersion: v1
-  metadata:
-    name: basic-spring-boot-prod
-    creationTimestam: null
-  displayName: Spring Rest App - Prod
+  displayName: staging env
+
