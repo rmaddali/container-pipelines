@@ -1,4 +1,4 @@
 APPLICATION_NAME=springboot-noun-service
-NAMESPACE=pipelines
+NAMESPACE=pipelines-user1
 SOURCE_REPOSITORY_URL=https://github.com/rmaddali/springboot-noun-service.git
 SOURCE_REPOSITORY_REF=master
