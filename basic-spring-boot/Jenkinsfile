@@ -3,11 +3,11 @@ openshift.withCluster() {
   env.POM_FILE = env.BUILD_CONTEXT_DIR ? "${env.BUILD_CONTEXT_DIR}/pom.xml" : "pom.xml"
   env.APP_NAME = "${env.JOB_NAME}".replaceAll(/-?pipeline-?/, '').replaceAll(/-?${env.NAMESPACE}-?/, '').replaceAll("/", '')
   echo "Starting Pipeline for ${APP_NAME}..."
-  def projectBase = "${env.NAMESPACE}".replaceAll(/-build/, '')
-  env.STAGE0 = "${projectBase}-build"
-  env.STAGE1 = "${projectBase}-dev"
-  env.STAGE2 = "${projectBase}-stage"
-  env.STAGE3 = "${projectBase}-prod"
+  def projectBase = "pipelines-user1"
+  env.STAGE0 = "pipelines-user1"
+  env.STAGE1 = "vertx-dev"
+  env.STAGE2 = "vertx-test"
+  
 }
 
 pipeline {
@@ -128,32 +128,9 @@ pipeline {
         }
       }
     }
-    stage('Promote from Stage to Prod') {
-      steps {
-        script {
-          openshift.withCluster() {
-            openshift.tag("${env.STAGE2}/${env.APP_NAME}:latest", "${env.STAGE3}/${env.APP_NAME}:latest")
-          }
-        }
-      }
-    }
+    
 
-    stage ('Verify Deployment to Prod') {
-      steps {
-        script {
-          openshift.withCluster() {
-              openshift.withProject("${STAGE3}") {
-              def dcObj = openshift.selector('dc', env.APP_NAME).object()
-              def podSelector = openshift.selector('pod', [deployment: "${APP_NAME}-${dcObj.status.latestVersion}"])
-              podSelector.untilEach {
-                  echo "pod: ${it.name()}"
-                  return it.object().status.containerStatuses[0].ready
-              }
-            }
-          }
-        }
-      }
-    }
+   
 
   }
 }
