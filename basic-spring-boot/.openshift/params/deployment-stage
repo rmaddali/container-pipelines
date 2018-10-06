@@ -1,6 +1,6 @@
-APPLICATION_NAME=spring-rest
-NAMESPACE=basic-spring-boot-stage
+APPLICATION_NAME=springboot-noun-service
+NAMESPACE=vertx-dev
 SA_NAME=jenkins
-SA_NAMESPACE=basic-spring-boot-build
+SA_NAMESPACE=pipelines-user1
 READINESS_RESPONSE=status.:.UP
 READINESS_PATH=/health
