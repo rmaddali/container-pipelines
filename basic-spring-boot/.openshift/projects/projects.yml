@@ -4,19 +4,23 @@ items:
 - kind: ProjectRequest
   apiVersion: v1
   metadata:
-    name: pipelines-user1
+    name: pipelines-{USER_NAME}
     creationTimestam: null
   displayName: CI CD env
 - kind: ProjectRequest
   apiVersion: v1
   metadata:
-    name: devenv-user1
+    name: devenv-{USER_NAME}
     creationTimestam: null
   displayName: Dev env
 - kind: ProjectRequest
   apiVersion: v1
   metadata:
-    name: stageenv-user1
+    name: stageenv-{USER_NAME}
     creationTimestam: null
   displayName: staging env
-
+  parameters:
+- description: The name for the application.
+  name: USER_NAME
+  required: true
+  value: user1
