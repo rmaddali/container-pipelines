@@ -106,7 +106,7 @@ objects:
   metadata:
     creationTimestamp: null
     labels:
-      template: basic-vertx-template
+      template: basic-wildflyswarm
     name: jenkins_edit
     namespace: ${NAMESPACE}
   roleRef:
