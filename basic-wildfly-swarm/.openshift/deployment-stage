@@ -1,4 +1,4 @@
-APPLICATION_NAME=vertx-adjective-service
+APPLICATION_NAME=wildflyswarm-adj
 NAMESPACE=devenv-user1
 SA_NAMESPACE=pipelines-user1
 READINESS_RESPONSE=status.:.UP
