@@ -1,5 +1,5 @@
 APPLICATION_NAME=springboot-noun-service
-NAMESPACE=vertx-dev-user1
+NAMESPACE=devenv-user1
 SA_NAMESPACE=pipelines-user1
 READINESS_RESPONSE=status.:.UP
 READINESS_PATH=/health
