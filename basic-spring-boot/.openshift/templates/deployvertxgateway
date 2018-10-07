@@ -139,7 +139,3 @@ parameters:
   name: READINESS_PATH
   required: true
   value: '/'
-- description: 'String value expected back from readiness check'
-  name: READINESS_RESPONSE
-  required: true
-  value: 'Hello World!'
