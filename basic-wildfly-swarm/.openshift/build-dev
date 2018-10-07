@@ -1,1 +1,4 @@
-
+APPLICATION_NAME=vertx-adjective-service
+NAMESPACE=pipelines-user1
+SOURCE_REPOSITORY_URL=https://github.com/rmaddali/vertx-adjective-service.git
+SOURCE_REPOSITORY_REF=master
