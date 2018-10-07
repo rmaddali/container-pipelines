@@ -1,5 +1,5 @@
 APPLICATION_NAME=springboot-noun-service
-NAMESPACE=stage-env-user1
+NAMESPACE=stageenv-user1
 SA_NAME=jenkins
 SA_NAMESPACE=pipelines-user1
 READINESS_RESPONSE=status.:.UP
