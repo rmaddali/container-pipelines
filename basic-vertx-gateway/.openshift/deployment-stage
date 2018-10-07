@@ -1,4 +1,4 @@
-APPLICATION_NAME=wildflyswarm-adj
+APPLICATION_NAME=vertx-insult-gateway
 NAMESPACE=devenv-user1
 SA_NAMESPACE=pipelines-user1
 READINESS_RESPONSE=status.:.UP
