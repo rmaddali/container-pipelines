@@ -1,4 +1,4 @@
-APPLICATION_NAME=vertx-adjective-service
+APPLICATION_NAME=wildfly-swarm-adj
 NAMESPACE=pipelines-user1
-SOURCE_REPOSITORY_URL=https://github.com/rmaddali/vertx-adjective-service.git
+SOURCE_REPOSITORY_URL=https://github.com/rmaddali/wildfly-swarm-adj.git
 SOURCE_REPOSITORY_REF=master
