@@ -1,5 +1,5 @@
 APPLICATION_NAME=vertx-adjective-service
-NAMESPACE=devenv-user1
-SA_NAMESPACE=pipelines-user1
+NAMESPACE=devenv-user
+SA_NAMESPACE=pipelines-user
 READINESS_RESPONSE=status.:.UP
 READINESS_PATH=/health
