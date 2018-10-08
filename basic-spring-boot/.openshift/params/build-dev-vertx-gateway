@@ -1,4 +1,4 @@
 APPLICATION_NAME=vertx-insult-gateway
-NAMESPACE=pipelines-user1
+NAMESPACE=pipelines-user
 SOURCE_REPOSITORY_URL=https://github.com/rmaddali/vertx-insult-gateway.git
 SOURCE_REPOSITORY_REF=master
