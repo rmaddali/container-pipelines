@@ -1,1 +1,3 @@
-
+APPLICATION_NAME=vertx-insult-gateway
+NAMESPACE=devenv-user1
+SA_NAMESPACE=pipelines-user1
