@@ -1,4 +1,4 @@
 APPLICATION_NAME=wildflyswarm-adj
-NAMESPACE=pipelines-user1
+NAMESPACE=pipelines-user
 SOURCE_REPOSITORY_URL=https://github.com/rmaddali/wildfly-swarm-adj.git
 SOURCE_REPOSITORY_REF=master
