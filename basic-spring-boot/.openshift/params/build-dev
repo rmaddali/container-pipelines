@@ -1,4 +1,4 @@
 APPLICATION_NAME=springboot-noun-service
-NAMESPACE=pipelines-user1
+NAMESPACE=pipelines-user2
 SOURCE_REPOSITORY_URL=https://github.com/rmaddali/container-pipelines.git
 SOURCE_REPOSITORY_REF=master
