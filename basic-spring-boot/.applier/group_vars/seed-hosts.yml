@@ -25,10 +25,10 @@ openshift_cluster_content:
     template: "{{ inventory_dir }}/../.openshift/templates/deployvertx.yml"
     params: "{{ inventory_dir }}/../.openshift/params/deployment-stage-vertx"
   - name: "deploy vertx insult in dev"
-    template: "{{ inventory_dir }}/../.openshift/templates/deployvertxinsult.yml"
+    template: "{{ inventory_dir }}/../.openshift/templates/deployvertxgateway.yml"
     params: "{{ inventory_dir }}/../.openshift/params/deployment-dev-vertxinsult"
   - name: "deply vertx adj in stage"
-    template: "{{ inventory_dir }}/../.openshift/templates/deployvertxinsult.yml"
+    template: "{{ inventory_dir }}/../.openshift/templates/deployvertxgateway.yml"
     params: "{{ inventory_dir }}/../.openshift/params/deployment-stage-vertxinsult"
 - object: builds
   content:
@@ -42,7 +42,7 @@ openshift_cluster_content:
     template: "{{ inventory_dir }}/../.openshift/templates/buildvertx.yml"
     params: "{{ inventory_dir }}/../.openshift/params/build-dev-vertx"
   - name: "deploy build vertx insult pipeline to dev"
-    template: "{{ inventory_dir }}/../.openshift/templates/buildvertxinsult.yml"
-    params: "{{ inventory_dir }}/../.openshift/params/build-dev-vertx-insult"
+    template: "{{ inventory_dir }}/../.openshift/templates/buildvertxgateway.yml"
+    params: "{{ inventory_dir }}/../.openshift/params/build-dev-vertx-gateway"
     
    
