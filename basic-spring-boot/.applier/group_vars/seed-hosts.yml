@@ -26,10 +26,10 @@ openshift_cluster_content:
     params: "{{ inventory_dir }}/../.openshift/params/deployment-stage-vertx"
   - name: "deploy vertx insult in dev"
     template: "{{ inventory_dir }}/../.openshift/templates/deployvertxgateway.yml"
-    params: "{{ inventory_dir }}/../.openshift/params/deployment-dev-vertxinsult"
+    params: "{{ inventory_dir }}/../.openshift/params/deployment-dev-vertxgateway"
   - name: "deply vertx adj in stage"
     template: "{{ inventory_dir }}/../.openshift/templates/deployvertxgateway.yml"
-    params: "{{ inventory_dir }}/../.openshift/params/deployment-stage-vertxinsult"
+    params: "{{ inventory_dir }}/../.openshift/params/deployment-stage-vertxgateway"
 - object: builds
   content:
   - name: "deploy build sb pipeline to dev"
