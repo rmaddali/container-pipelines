@@ -3,3 +3,4 @@ NAMESPACE=devenv-user
 SA_NAMESPACE=pipelines-user
 READINESS_RESPONSE=status.:.UP
 READINESS_PATH=/health
+USER_NAME=11
