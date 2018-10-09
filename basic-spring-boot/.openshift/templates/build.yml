@@ -22,7 +22,7 @@ objects:
   metadata:
     labels:
       application: ${APPLICATION_NAME}
-    name: "${APPLICATION_NAME}-pipeline"
+    name: "${APPLICATION_NAME}"
     namespace: "${NAMESPACE}"
   spec:
     source:
