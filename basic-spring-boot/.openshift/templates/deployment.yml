@@ -18,7 +18,7 @@ objects:
     labels:
       application: ${APPLICATION_NAME}
     name: ${APPLICATION_NAME}
-    namespace: ${NAMESPACE}${USER_NAME}
+    namespace: ${NAMESPACE}
   spec:
     ports:
     - port: 8080
@@ -34,7 +34,7 @@ objects:
     labels:
       application: ${APPLICATION_NAME}
     name: ${APPLICATION_NAME}
-    namespace: ${NAMESPACE}${USER_NAME}
+    namespace: ${NAMESPACE}
   spec:
     host: ${HOSTNAME_HTTP}
     to:
@@ -45,14 +45,14 @@ objects:
     labels:
       application: ${APPLICATION_NAME}
     name: ${APPLICATION_NAME}
-    namespace: ${NAMESPACE}${USER_NAME}
+    namespace: ${NAMESPACE}
 - apiVersion: v1
   kind: DeploymentConfig
   metadata:
     labels:
       application: ${APPLICATION_NAME}
     name: ${APPLICATION_NAME}
-    namespace: ${NAMESPACE}${USER_NAME}
+    namespace: ${NAMESPACE}
   spec:
     replicas: 1
     selector:
@@ -108,13 +108,13 @@ objects:
     labels:
       template: basic-tomcat-template
     name: jenkins_edit
-    namespace: ${NAMESPACE}${USER_NAME}
+    namespace: ${NAMESPACE}
   roleRef:
     name: edit
   subjects:
   - kind: ServiceAccount
     name: ${SA_NAME}
-    namespace: ${SA_NAMESPACE}${USER_NAME}
+    namespace: ${SA_NAMESPACE}
   userNames:
   - system:serviceaccount:${SA_NAMESPACE}:${SA_NAME}
 parameters:
