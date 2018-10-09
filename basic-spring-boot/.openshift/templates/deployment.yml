@@ -114,7 +114,7 @@ objects:
   subjects:
   - kind: ServiceAccount
     name: ${SA_NAME}
-    namespace: ${SA_NAMESPACE}
+    namespace: ${SA_NAMESPACE}-{USER_NAME}
   userNames:
   - system:serviceaccount:${SA_NAMESPACE}:${SA_NAME}
 parameters:
@@ -143,3 +143,7 @@ parameters:
   name: READINESS_RESPONSE
   required: true
   value: 'Hello World!'
+- description: 'User name'
+  name: USER_NAME
+  required: true
+  
