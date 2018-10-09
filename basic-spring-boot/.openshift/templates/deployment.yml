@@ -143,7 +143,5 @@ parameters:
   name: READINESS_RESPONSE
   required: true
   value: 'Hello World!'
-- description: 'User name'
-  name: USER_NAME
-  required: true
+
   
