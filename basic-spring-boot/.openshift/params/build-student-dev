@@ -3,3 +3,6 @@ NAMESPACE=pipelines-user
 SOURCE_REPOSITORY_URL=https://github.com/rhdemos/vertx-insult-gateway.git
 SOURCE_REPOSITORY_REF=master
 APP_REPOSITORY_URL=https://github.com/rhdemos/vertx-insult-gateway.git
+
+
+
