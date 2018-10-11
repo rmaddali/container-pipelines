@@ -42,7 +42,7 @@ objects:
         jenkinsfilePath: ${PIPELINE_SCRIPT}
         env:
         - name: "APPLICATION_SOURCE_REPO"
-          value: "${APPLICATION_SOURCE_REPO}"
+          value: "${SOURCE_REPOSITORY_URL}"
 - apiVersion: v1
   kind: BuildConfig
   metadata:
